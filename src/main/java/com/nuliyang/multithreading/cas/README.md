@@ -1,0 +1,8 @@
+compareAndSet方法返回true表示修改成功，返回false表示修改失败
+compareAndSet方法会先获取当前值，然后判断当前值是否等于pre
+如果等于pre则将target值设置给balance，并返回true，否则返回false
+cas是乐观锁
+synchronized是悲观锁
+cas直接对于cpu的机器指令
+锁的竞争导致上下分切换频繁一些
+cas的正常调度使得上下问切换低频一些

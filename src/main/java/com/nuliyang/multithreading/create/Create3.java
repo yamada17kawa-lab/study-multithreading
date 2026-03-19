@@ -15,7 +15,7 @@ import java.util.concurrent.FutureTask;
 public class Create3 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        FutureTask<String> task = new FutureTask<>(new Callable<String>() {
+        FutureTask<String> task = new FutureTask<>(new Callable<>() {
             @Override
             public String call() throws Exception {
                 log.info("running1");
